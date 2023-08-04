@@ -1,16 +1,16 @@
 import React from "react";
 interface CardProps {
-  width?: any;
+  width?: number;
   height?: number;
   title?: string;
   contents?: string;
-  img?: any;
-  icon?: any;
-  tag?: any[];
+  img?: string;
+  tag?: string[];
   date?: string;
   fontSize?: number;
   sticky?: boolean;
   fade?: boolean;
+  index?: number;
 }
 const Card = (props: CardProps) => {
   const {
@@ -20,7 +20,6 @@ const Card = (props: CardProps) => {
     title,
     contents,
     img,
-    icon,
     fontSize,
     tag,
     date,

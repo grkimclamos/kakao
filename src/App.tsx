@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./layouts/Header";
 import Icon from "./assets/icons/Icon";
 import Card from "@src/components/Card";
-import { wrap1Arr, wrap2Arr } from "C:/Users/grkim/Desktop/kakao/src/data/data";
+import { wrap1Arr, wrap2Arr } from "@src/data/data";
 import Footer from "@src/layouts/Footer";
 import $ from "jquery";
 import Maps from "@src/components/Maps";
@@ -14,9 +14,6 @@ const App = () => {
   }
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-    };
   }, []);
 
   const formattedDate = `${
